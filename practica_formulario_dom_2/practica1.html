@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS - Maquetación</title>
+    <link rel="stylesheet" href="css/maquetacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="js/practicadom1.js"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="header">
+            
+        </div>
+        <div id="nav">
+        </div>
+        <div id="contenido">
+            <div id="section">
+                <article class="articulo"></article>
+                <article class="articulo"></article>
+                <article class="articulo"></article>
+                <article class="articulo"></article>
+            </div>
+            <div id="aside" class="row align-items-center">
+                
+                    <table class="table table-success table table-striped table-bordered">
+                        <tr>
+                            <th colspan="2" style="text-align: center;" ><label for="login" class="col-form-label" >Servicio de Agua</label></th>
+                        </tr>
+                        <tr>
+                            <th><label for="nombre" class="col-form-label">Nombre Usuario:</label></th>
+                            <td><input type="text" name="nombre" id="nombre" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <th><label for="estrato" class="col-form-label">Estrato:</label></th>
+                            <td>
+                                <select name="estrato" id="estrato" class="form-select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><label for="consumo" class="col-form-label">Consumo del mes:</label></th>
+                            <td><input type="number" name="consumo" id="consumo" class="form-control" value="10"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><button class="btn btn-primary form-control" onclick="calcularValorServicio()" >Procesar</button></td>
+                        </tr>
+                        <tr>
+                            <th><label for="valorPagar" class="col-form-label" id="titulo"></label></th>
+                            <td><label for="valorP" id="valorP"></label></td>
+                        </tr>
+                    </table>
+                
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+</body>
+</html>
